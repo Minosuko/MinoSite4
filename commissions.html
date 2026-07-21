@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Commissions - Minosuko</title>
+		<meta name="author" content="Minosuko">
+		<meta name="description" content="Commission info and pricing for Minosuko">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Commissions - Minosuko">
+		<meta property="og:description" content="Commission info and pricing">
+		<meta property="og:url" content="https://minosuko.id.vn/commissions.html">
+		<meta property="og:image" content="https://minosuko.id.vn/assets/images/web_image.jpg">
+		<meta property="og:image:secure_url" content="https://minosuko.id.vn/assets/images/web_image.jpg">
+		<link rel="icon" type="image/x-icon" href="/favicon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/style.css">
+	</head>
+	<body class="loading">
+		<div class="loader" id="loader">
+			<div class="lotus-pond" id="lotusPond">
+      <div class="lotus-ring"></div>
+      <div class="lotus-ring lotus-ring--2"></div>
+      <div class="ring-stars">
+        <span class="ring-star"><svg viewBox="-12 -12 24 24"><path d="M0-10 Q0 0 10 0 Q0 0 0 10 Q0 0-10 0 Q0 0 0-10Z"/></svg></span>
+        <span class="ring-star"><svg viewBox="-12 -12 24 24"><path d="M0-10 Q0 0 10 0 Q0 0 0 10 Q0 0-10 0 Q0 0 0-10Z"/></svg></span>
+        <span class="ring-star"><svg viewBox="-12 -12 24 24"><path d="M0-10 Q0 0 10 0 Q0 0 0 10 Q0 0-10 0 Q0 0 0-10Z"/></svg></span>
+        <span class="ring-star"><svg viewBox="-12 -12 24 24"><path d="M0-10 Q0 0 10 0 Q0 0 0 10 Q0 0-10 0 Q0 0 0-10Z"/></svg></span>
+      </div>
+      <div class="lotus" id="lotus">
+					<div class="lotus-glow" id="lotusGlow"></div>
+				</div>
+				<div class="lotus-reflection"></div>
+			</div>
+		</div>
+
+		<div class="bg-blob"></div>
+		<div class="bg-blob bg-blob--2"></div>
+		<div class="bg-blob bg-blob--3"></div>
+		<div class="bg-grain"></div>
+
+		<button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+			<span class="material-symbols-outlined icon-sun">light_mode</span>
+			<span class="material-symbols-outlined icon-moon">dark_mode</span>
+		</button>
+
+		<div class="app">
+			<nav class="nav" id="nav">
+				<div class="nav-glass">
+					<button class="nav-item" data-tab="home">
+						<span class="material-symbols-outlined">home</span>
+						<span class="nav-label">Home</span>
+					</button>
+					<button class="nav-item" data-tab="project">
+						<span class="material-symbols-outlined">deployed_code</span>
+						<span class="nav-label">Project</span>
+					</button>
+					<button class="nav-item active" data-tab="commission">
+						<span class="material-symbols-outlined">palette</span>
+						<span class="nav-label">Commission</span>
+					</button>
+					<button class="nav-item" data-tab="contract">
+						<span class="material-symbols-outlined">mail</span>
+						<span class="nav-label">Contract</span>
+					</button>
+					<div class="nav-indicator" id="navIndicator"></div>
+				</div>
+			</nav>
+
+			<main class="main">
+				<div class="tab-content active" id="tab-commission">
+					<div class="tab-inner">
+						<h2 class="section-title">Commission</h2>
+
+						<div class="comm-grid">
+							<div class="comm-card glass-card" id="artCard">
+								<div class="comm-card-head">
+									<span class="material-symbols-outlined comm-card-icon">brush</span>
+									<h3 class="comm-card-title">Art</h3>
+									<span class="comm-card-status" id="artStatus"><span class="comm-status-dot"></span>Loading...</span>
+								</div>
+								<div class="comm-card-price" id="artPrice">--</div>
+								<p class="comm-card-desc" id="artDesc"></p>
+								<div class="comm-card-types" id="artTypes"></div>
+								<div class="comm-card-delivery" id="artDelivery"></div>
+							</div>
+
+							<div class="comm-card glass-card" id="devCard">
+								<div class="comm-card-head">
+									<span class="material-symbols-outlined comm-card-icon">code</span>
+									<h3 class="comm-card-title">Development</h3>
+									<span class="comm-card-status" id="devStatus"><span class="comm-status-dot"></span>Loading...</span>
+								</div>
+								<div class="comm-card-price" id="devPrice">--</div>
+								<p class="comm-card-desc" id="devDesc"></p>
+								<div class="comm-card-types" id="devTypes"></div>
+								<div class="comm-card-delivery" id="devDelivery"></div>
+							</div>
+						</div>
+
+						<div class="comm-footer">
+							<div class="comm-notes glass-card" id="commNotes"></div>
+							<div class="comm-order">
+								<p class="comm-order-label">Interested? Reach out via:</p>
+								<p class="comm-order-contact" id="commOrderContact"></p>
+							</div>
+							<div class="ko-fi-wrap">
+								<a href="https://ko-fi.com/minosuko" target="_blank" rel="noopener" class="ko-fi-btn">
+									<span class="material-symbols-outlined">coffee</span>
+									<span>Support me on Ko-fi</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+
+  <div class="page-overlay" id="pageOverlay"></div>
+  <div class="theme-transition"></div>
+		<script src="assets/js/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "art": {
+    "status": 0,
+    "price": "-",
+    "description": "...",
+    "types": ["not working on art comm for now"],
+    "delivery": "..."
+  },
+  "dev": {
+    "status": 1,
+    "price": "$10 - $100 USD",
+    "description": "Web development, Discord bots, software projects, and technical consulting.",
+    "types": ["Web Development", "Discord Bots", "Software Projects", "API Integration"],
+    "delivery": "15 days - 2 month depending on scope"
+  },
+  "details": {
+    "contact": "DM on Discord (@minosuko) or Twitter (@MinosukoUwU)",
+    "notes": "I reserve the right to decline any request. Payment via Ko-fi or PayPal (Global) / Bank (Vietnam)."
+  }
+}
